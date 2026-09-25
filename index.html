@@ -16,12 +16,108 @@
 </head>
 <body>
 
-  <h1>Hello</h1>
-  <p>Hola Frida.</p>
+<p>Hola. espero desde el fondo de mi corazón que puedas leer esto. Y que no sea en vano.</p>
+
+<p>Si es verdad entonces, tengo que confesar que por cada mañana y cada día pienso en lo que sucedio. lo repito y lo recapacito.</p>
+
+<p>Recuerdo muchas cosas, buenas y malas, pero cada cosa buena me recuerda a otra. A momentos de felicidad.</p>
+
+<p>Recuerdo cuando nos juntabamos y dormiamos sobre el regazo del otro, y tambien cosas ridiculas como cuando leiamos historias de sonic sirena o jugabamos juntos. Poder compartir algo asi.</p>
+
+<p>A mi no me parecia tan fan de esas historias, pero me gustaba mucho poder leer algo asi contigo, algo que no puedo hacer con nadie mas, ver las peliculas que te gustan, y escucharte como me cuentas sobre chikawas y demas.</p>
+
+<p>Me acuerdo de momentos duros como cuando andabamos por las calles caminando para ver si un restaurante nos dejaba entrar. Como estabamos pintados de payasos, era unico, era divertido.</p>
+
+<p>Y me arrepiento de perderlo. Recuerdo las veces bonitas que ibamos a los cines. o cuando pasaban los niños que decian que nos dieramos un beso. Las cosas pequeñas que acumulaban algo bonito.</p>
+
+<p>Me acorde cuando vi tu reacción al entregarte tus regalos de cumpleaños, la satisfaccion y felicidad que me daba poder verte sonreir. Y abrazarte. ver como te llenabas de felicidad al ver el regalo o al probar el pastel.</p>
+
+<p>Extraño verte sonreir, y recuerdo como al salir la ultima vez me agarrabas de la mano y me sonreias. Y yo creía que estaba todo bien. Creí que las cosas iban a mejorar.</p>
+
+<p>Creí que podria experimentar mas de esos dias alegres. Tiernos, bonitos.</p>
+
+<p>Como podia hacer las cosas unicas que queria hacer contigo. Desvelarnos juntos, ser el refugio de otro. Me daba orgullo saber que podia ser un lugar seguro, que podias confiar para escucharme.</p>
+
+<p>Me decias lo que te atemoraba, lo que te frustraba, lo que te hacia feliz. Lo que te daba risa.</p>
+
+<p>No pasa una noche en la que no dejo de pensar en esos dias. y no pasa un dia en el que no pienso en ti.</p>
+
+<p>Y no hay tantas palabras para poder decirte que te extraño. Y que extraño las cosas buenas que tuvimos. Las veces que saliamos a comer, las veces que ibamos a los parques.</p>
+
+<p>Caminabamos juntos, nos agarrabamos de la mano, nos besabamos, nos deciamos de todo.</p>
+
+<p>Eres de las cosas que mas atesoro. Y se que han ocurrido cosas malas, crueles, viles... Pero tambien recuerdo lo bello en las cosas buenas que vivimos.</p>
+
+<p>Cuando ibamos a comer y nos dabamos regalos. Y siempre buscaba las flores que mas te gustaran aunque no las encontraba. Cuando llorabamos y nos quedabamos para el otro.</p>
+
+<p>Cuando me decias que me alejara en tu coche porque decias que me harías daño, y te dije que aún asi te apoyaría. Y estaba ahí. Y no me hiciste daño. Me hiciste feliz.</p>
+
+<p>Cuando en la leve luz podiamos compartir nuestros secretos. Cuando podiamos hablar gentilmente de lo que nos gustaba.</p>
+
+<p>Cuando jugabamos a algo y te gustaba tirarme del hielo o nos enojabamos con todos giles menos nosotros. Cuando deciamos que nos queriamos.</p>
+
+<p>Cuando dibujamos en esa cafetería y pintabamos en la otra y cada uno tenia su estilo. Pero los dos estabamos de acuerdo con lo que queriamos.</p>
+
+<p>Cuando me contabas como te habia ido con los niños de tu servicio social y podia ver en tus ojos que te gustaría criar a uno.</p>
+
+<p>Cada vez que agarrabas mi movil y nos tomabamos fotos, o cada vez que me levantaba podía ver un mensaje tuyo de buenos dias. y si no estaba tenia la certeza de que podia enviarlo yo.</p>
+
+<p>Cuando enviabamos fotos de como estabamos arreglados y siempre eramos guapos.</p>
+
+<p>Cuando me mostrabas como tu gato te acompañaba en la cama y como yo acariciaba a mi mascota.</p>
+
+<p>Cuando te daba un beso y tu me lo devolvias con una mordida.</p>
+
+<p>Cuando jugabas con que los muñecos eran nuestros hijos y decia algo irresponsable para que intentaras defenderlo de mi.</p>
+
+<p>Me gusto aprender de ti. Me gusto adorar las cosas nuevas que me mostraste.</p>
+
+<p>Y me tomo tiempo poder descubrir lo mal que hacia. Y decidi no ser asi jamas.</p>
+
+<p>Por cual valor no hay mas grandre que extrañar tu amor. Pensar en ti en las canciones y sonatas. Ver el teatro y pensar en llevarte ahi alguna vez.</p>
+
+<p>Ver el telefono y ver tu notificacion.</p>
+
+<p>Ver tu cara y ver tu amor entre tus ojos.</p>
+
+<p>Por todas las cosas bellas que vivimos. Por el arrepentimiento entre mis ojos por perderlo.</p>
+
+<p>Frida... Me hiciste muy feliz.</p>
+
+<p>No olvidare tu amor.</p>
+
+<p>Porque aún te amo.</p>
+
+<p>Este es el dibujo que estaba preparando para tu regalo. Claro que... no lo pude terminar. Pensaba que habia pasado mucho tiempo en el que solo tu lo hacias, entonces era mi turno.</p>
+
+<p>intentaba hacer algo estilo pucca, pero... no lo sé.</p>
+
+  
 <img src="file91243.png" alt="My image">
-  <audio autoplay loop>
-    <source src="audio.mp3" type="audio/mpeg">
-  </audio>
+
+
+<audio id="music" loop>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById("music");
+
+  function startMusic() {
+    music.play().catch(() => {});
+    
+    window.removeEventListener("click", startMusic);
+    window.removeEventListener("scroll", startMusic);
+    window.removeEventListener("touchstart", startMusic);
+    window.removeEventListener("keydown", startMusic);
+  }
+
+  window.addEventListener("click", startMusic);
+  window.addEventListener("scroll", startMusic);
+  window.addEventListener("touchstart", startMusic);
+  window.addEventListener("keydown", startMusic);
+</script>
+
 
 </body>
 </html>
